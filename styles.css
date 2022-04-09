@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+#vychytavka {
+  display: none;
+}
+.flex img,
+main iframe {
+  padding: 0.8rem;
+}
+
+/* Page - Kontakt */
+.kontakt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* Homepage - icons*/
+div.dotazitem > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 10vw;
+  width: 10vw;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* O nás*/
+.podpis {
+  text-align: right;
+  font-style: italic;
+}
+/* Sitemap */
+.sitemap {
+  list-style: decimal;
+  line-height: 1.8rem;
+}
+
+/* Mobile */
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 1920px;
+  margin: auto;
+}
+.dotaz {
+  align-items: center;
+}
+.dotazitem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body {
+  height: 100%;
+  overflow-x: hidden;
+  width: 100vw;
+}
+html {
+  height: 100%;
+}
+
+main {
+  flex-grow: 1;
+}
+
+td {
+  padding: 5px;
+}
+td:nth-child(2n) {
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+ul,
+ul ul {
+  padding-left: 1.5rem;
+}
+
+main > ul {
+  display: table;
+  margin: auto;
+}
+
+/* Header */
+
+header {
+  background-color: #d4681b;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 1rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  text-align: center;
+}
+/* Hide banner picture in phone layout*/
+.headerpic {
+  display: none;
+  font-weight: 500;
+}
+
+/* Nav */
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #d4681b;
+}
+nav li {
+  background-color: #d4681b;
+  padding: 0;
+}
+
+nav a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+}
+
+/* Main */
+
+main h1,
+h2,
+h3 {
+  text-align: center;
+}
+main {
+  padding: 10px;
+}
+
+p:last-child {
+  margin-bottom: 0px;
+}
+
+.flex,
+.dotaz {
+  display: flex;
+  flex-direction: column;
+}
+.flex img,
+.dotaz img {
+  max-width: 100%;
+}
+
+main > p {
+  text-align: justify;
+
+  margin-bottom: 1rem;
+}
+
+main {
+  background-color: #fff;
+}
+
+footer {
+  padding: 10px 0 10px 0;
+
+  background-color: #d4681b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer a,
+footer {
+  color: white;
+}
+
+/*
+Tablet
+*/
+@media screen and (min-width: 700px) {
+  div.item > p {
+    padding: 0.5rem;
+  }
+  .dotaz {
+    align-items: flex-end;
+  }
+  .kontakt {
+    flex-direction: row;
+  }
+  .picture {
+    flex: 0 0 40%;
+  }
+  nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  nav li {
+    flex-wrap: wrap;
+    width: calc(100% * (1 / 3));
+  }
+  .headerpic {
+    display: block;
+    height: 350px;
+    background: url(img/header_img.jpg);
+    /*
+    background-size: cover;
+    */
+    background-repeat: no-repeat;
+    background-position: top;
+    text-align: center;
+    user-select: none;
+    line-height: 350px;
+    text-shadow: #474747 3px 5px 2px;
+    color: white;
+    font-size: 2rem;
+  }
+  .flex {
+    align-items: center;
+  }
+  .flex:nth-of-type(1n) {
+    flex-direction: row;
+  }
+
+  .flex:nth-of-type(2n) {
+    flex-direction: row-reverse;
+  }
+
+  .dotaz {
+    flex-direction: row;
+  }
+
+  .dotazitem {
+    flex: 1 1 0;
+    text-align: center;
+    white-space: nowrap;
+  }
+  div.dotazitem > img {
+    width: 5vw;
+    height: 5vw;
+  }
+}
+/*
+Desktop
+*/
+@media screen and (min-width: 900px) {
+  body {
+    background-color: #d4d4d4;
+  }
+   main {
+    padding: 0.75rem 15% 0.75rem 15%;
+  }
+  .picture {
+    flex: 0 0 30%;
+  }
+
+  nav ul {
+    justify-content: center;
+  }
+  nav li {
+    flex-basis: 6.5rem;
+    flex-wrap: nowrap;
+    border-top: 4px solid transparent;
+  }
+  nav li:hover {
+    border-top: 4px solid #fff;
+  }
+  div.dotazitem > img {
+    width: 5vw;
+    height: 5vw;
+    max-width: 150px;
+    max-height: 150px;
+  }
+  footer {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+/*
+PRINT
+*/
+@media only print {
+  * {
+    font-family: serif;
+    color: #000;
+  }
+  main {
+    display: inline-block;
+  }
+  nav {
+    display: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  a[href]::after {
+    content: " (adresa odkazu: " attr(href) ")";
+  }
+  header {
+    background-color: #fff;
+    color: #000;
+  }
+  .flex {
+    flex-direction: row-reverse;
+  }
+  div.dotazitem img {
+    display: none;
+  }
+  .dotaz::before {
+    content: "Kontaktujte nás";
+  }
+  .picture {
+    flex: 0 0 25%;
+  }
+}
