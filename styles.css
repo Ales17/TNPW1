@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 
+:root {
+  --main:  #d4681b;
+}
+
+
 #vychytavka {
   display: none;
 }
@@ -93,7 +98,7 @@ main > ul {
 /* Header */
 
 header {
-  background-color: #d4681b;
+  background-color: var(--main);
 }
 
 header h1 {
@@ -117,10 +122,10 @@ nav ul {
   margin: 0;
   display: flex;
   flex-direction: column;
-  background-color: #d4681b;
+  background-color: var(--main);
 }
 nav li {
-  background-color: #d4681b;
+  background-color: var(--main);
   padding: 0;
 }
 
@@ -170,7 +175,7 @@ main {
 footer {
   padding: 10px 0 10px 0;
 
-  background-color: #d4681b;
+  background-color: var(--main);
   display: flex;
   flex-direction: column;
   align-items: center;
