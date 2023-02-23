@@ -1,3 +1,6 @@
-# TNPW1
+## Web template
 
-Website „LAWYER“ - HTML project created in my first semester at the university.
+Course: *Technologies for WEB Publishing I*  
+
+ - Responsive (mobile-first) design
+ - HTML and CSS only
